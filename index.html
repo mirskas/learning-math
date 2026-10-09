@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Math</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">∑ Learning Math</div>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#topics">Topics</a></li>
+        <li><a href="#quiz">Quiz</a></li>
+        <li><a href="#lessons">Lessons</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="Menu">☰</button>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Master Math, One Step at a Time</h1>
+      <p>Interactive lessons, practice quizzes, and fun challenges to boost your math skills — from arithmetic to algebra and beyond.</p>
+      <div class="hero-buttons">
+        <a href="#topics" class="btn btn-primary">Start Learning</a>
+        <a href="#quiz" class="btn btn-outline">Take a Quiz</a>
+      </div>
+    </div>
+    <div class="hero-math" aria-hidden="true">
+      <span>π</span><span>∑</span><span>√</span><span>∞</span><span>∫</span><span>±</span>
+    </div>
+  </section>
+
+  <!-- Topics -->
+  <section id="topics" class="section">
+    <h2>Explore Topics</h2>
+    <p class="section-sub">Choose a topic and start learning at your own pace.</p>
+    <div class="topics-grid">
+      <div class="topic-card" data-topic="arithmetic">
+        <div class="topic-icon">➕</div>
+        <h3>Arithmetic</h3>
+        <p>Addition, subtraction, multiplication, and division fundamentals.</p>
+        <span class="topic-level">Beginner</span>
+      </div>
+      <div class="topic-card" data-topic="fractions">
+        <div class="topic-icon">½</div>
+        <h3>Fractions</h3>
+        <p>Simplify, add, subtract, multiply, and divide fractions.</p>
+        <span class="topic-level">Beginner</span>
+      </div>
+      <div class="topic-card" data-topic="algebra">
+        <div class="topic-icon">x</div>
+        <h3>Algebra</h3>
+        <p>Solve equations, work with variables, and understand expressions.</p>
+        <span class="topic-level">Intermediate</span>
+      </div>
+      <div class="topic-card" data-topic="geometry">
+        <div class="topic-icon">△</div>
+        <h3>Geometry</h3>
+        <p>Shapes, angles, area, perimeter, and the Pythagorean theorem.</p>
+        <span class="topic-level">Intermediate</span>
+      </div>
+      <div class="topic-card" data-topic="percentages">
+        <div class="topic-icon">%</div>
+        <h3>Percentages</h3>
+        <p>Calculate discounts, tips, increases, and percentage change.</p>
+        <span class="topic-level">Beginner</span>
+      </div>
+      <div class="topic-card" data-topic="wordproblems">
+        <div class="topic-icon">📝</div>
+        <h3>Word Problems</h3>
+        <p>Translate real-world scenarios into math and solve them.</p>
+        <span class="topic-level">Advanced</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lessons Panel -->
+  <section id="lessons" class="section section-alt">
+    <h2>Lessons</h2>
+    <p class="section-sub">Click a topic above or pick a lesson below to study concepts with examples.</p>
+    <div class="lesson-viewer">
+      <div id="lesson-content" class="lesson-content">
+        <p class="lesson-placeholder">Select a topic to view its lesson.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quiz -->
+  <section id="quiz" class="section">
+    <h2>Practice Quiz</h2>
+    <p class="section-sub">Test your skills with randomly generated questions.</p>
+    <div class="quiz-box">
+      <div class="quiz-header">
+        <span id="quiz-topic-label">Mixed Topics</span>
+        <span id="quiz-score">Score: 0 / 0</span>
+      </div>
+      <div class="quiz-progress"><div id="progress-bar" class="progress-fill"></div></div>
+      <div id="quiz-body">
+        <p id="quiz-question" class="quiz-question">Loading question…</p>
+        <div id="quiz-options" class="quiz-options"></div>
+        <p id="quiz-feedback" class="quiz-feedback"></p>
+        <button id="next-btn" class="btn btn-primary next-btn" hidden>Next Question →</button>
+      </div>
+      <div id="quiz-result" class="quiz-result" hidden>
+        <h3>Quiz Complete!</h3>
+        <p id="result-text"></p>
+        <button id="restart-btn" class="btn btn-primary">Try Again</button>
+      </div>
+      <div class="quiz-picker">
+        <label for="topic-select">Topic:</label>
+        <select id="topic-select">
+          <option value="mixed">Mixed Topics</option>
+          <option value="arithmetic">Arithmetic</option>
+          <option value="fractions">Fractions</option>
+          <option value="algebra">Algebra</option>
+          <option value="geometry">Geometry</option>
+          <option value="percentages">Percentages</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>∑ Learning Math — Learn, practice, and grow your math skills.</p>
+    <p class="footer-sub">Built for learners everywhere.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
