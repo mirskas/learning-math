@@ -13,25 +13,31 @@
   <!-- Header -->
   <header>
     <nav class="navbar">
-      <div class="logo">∑ Learning Math</div>
+      <div class="logo">∑ <span data-i18n="logo">Learning Math</span></div>
       <ul class="nav-links">
-        <li><a href="#home" class="active">Home</a></li>
-        <li><a href="#topics">Topics</a></li>
-        <li><a href="#quiz">Quiz</a></li>
-        <li><a href="#lessons">Lessons</a></li>
+        <li><a href="#home" class="active" data-i18n="nav.home">Home</a></li>
+        <li><a href="#topics" data-i18n="nav.topics">Topics</a></li>
+        <li><a href="#quiz" data-i18n="nav.quiz">Quiz</a></li>
+        <li><a href="#lessons" data-i18n="nav.lessons">Lessons</a></li>
       </ul>
-      <button class="menu-toggle" aria-label="Menu">☰</button>
+      <div class="nav-right">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button id="lang-en" class="lang-btn active">EN</button>
+          <button id="lang-ru" class="lang-btn">RU</button>
+        </div>
+        <button class="menu-toggle" aria-label="Menu">☰</button>
+      </div>
     </nav>
   </header>
 
   <!-- Hero -->
   <section id="home" class="hero">
     <div class="hero-content">
-      <h1>Master Math, One Step at a Time</h1>
-      <p>Interactive lessons, practice quizzes, and fun challenges to boost your math skills — from arithmetic to algebra and beyond.</p>
+      <h1 data-i18n="hero.title">Master Math, One Step at a Time</h1>
+      <p data-i18n="hero.sub">Interactive lessons, practice quizzes, and fun challenges to boost your math skills — from arithmetic to algebra and beyond.</p>
       <div class="hero-buttons">
-        <a href="#topics" class="btn btn-primary">Start Learning</a>
-        <a href="#quiz" class="btn btn-outline">Take a Quiz</a>
+        <a href="#topics" class="btn btn-primary" data-i18n="hero.cta1">Start Learning</a>
+        <a href="#quiz" class="btn btn-outline" data-i18n="hero.cta2">Take a Quiz</a>
       </div>
     </div>
     <div class="hero-math" aria-hidden="true">
@@ -41,63 +47,63 @@
 
   <!-- Topics -->
   <section id="topics" class="section">
-    <h2>Explore Topics</h2>
-    <p class="section-sub">Choose a topic and start learning at your own pace.</p>
+    <h2 data-i18n="topics.title">Explore Topics</h2>
+    <p class="section-sub" data-i18n="topics.sub">Choose a topic and start learning at your own pace.</p>
     <div class="topics-grid">
       <div class="topic-card" data-topic="arithmetic">
         <div class="topic-icon">➕</div>
-        <h3>Arithmetic</h3>
-        <p>Addition, subtraction, multiplication, and division fundamentals.</p>
-        <span class="topic-level">Beginner</span>
+        <h3 data-i18n="topics.arithmetic.name">Arithmetic</h3>
+        <p data-i18n="topics.arithmetic.desc">Addition, subtraction, multiplication, and division fundamentals.</p>
+        <span class="topic-level" data-i18n="level.beginner">Beginner</span>
       </div>
       <div class="topic-card" data-topic="fractions">
         <div class="topic-icon">½</div>
-        <h3>Fractions</h3>
-        <p>Simplify, add, subtract, multiply, and divide fractions.</p>
-        <span class="topic-level">Beginner</span>
+        <h3 data-i18n="topics.fractions.name">Fractions</h3>
+        <p data-i18n="topics.fractions.desc">Simplify, add, subtract, multiply, and divide fractions.</p>
+        <span class="topic-level" data-i18n="level.beginner">Beginner</span>
       </div>
       <div class="topic-card" data-topic="algebra">
         <div class="topic-icon">x</div>
-        <h3>Algebra</h3>
-        <p>Solve equations, work with variables, and understand expressions.</p>
-        <span class="topic-level">Intermediate</span>
+        <h3 data-i18n="topics.algebra.name">Algebra</h3>
+        <p data-i18n="topics.algebra.desc">Solve equations, work with variables, and understand expressions.</p>
+        <span class="topic-level" data-i18n="level.intermediate">Intermediate</span>
       </div>
       <div class="topic-card" data-topic="geometry">
         <div class="topic-icon">△</div>
-        <h3>Geometry</h3>
-        <p>Shapes, angles, area, perimeter, and the Pythagorean theorem.</p>
-        <span class="topic-level">Intermediate</span>
+        <h3 data-i18n="topics.geometry.name">Geometry</h3>
+        <p data-i18n="topics.geometry.desc">Shapes, angles, area, perimeter, and the Pythagorean theorem.</p>
+        <span class="topic-level" data-i18n="level.intermediate">Intermediate</span>
       </div>
       <div class="topic-card" data-topic="percentages">
         <div class="topic-icon">%</div>
-        <h3>Percentages</h3>
-        <p>Calculate discounts, tips, increases, and percentage change.</p>
-        <span class="topic-level">Beginner</span>
+        <h3 data-i18n="topics.percentages.name">Percentages</h3>
+        <p data-i18n="topics.percentages.desc">Calculate discounts, tips, increases, and percentage change.</p>
+        <span class="topic-level" data-i18n="level.beginner">Beginner</span>
       </div>
       <div class="topic-card" data-topic="wordproblems">
         <div class="topic-icon">📝</div>
-        <h3>Word Problems</h3>
-        <p>Translate real-world scenarios into math and solve them.</p>
-        <span class="topic-level">Advanced</span>
+        <h3 data-i18n="topics.wordproblems.name">Word Problems</h3>
+        <p data-i18n="topics.wordproblems.desc">Translate real-world scenarios into math and solve them.</p>
+        <span class="topic-level" data-i18n="level.advanced">Advanced</span>
       </div>
     </div>
   </section>
 
   <!-- Lessons Panel -->
   <section id="lessons" class="section section-alt">
-    <h2>Lessons</h2>
-    <p class="section-sub">Click a topic above or pick a lesson below to study concepts with examples.</p>
+    <h2 data-i18n="lessons.title">Lessons</h2>
+    <p class="section-sub" data-i18n="lessons.sub">Click a topic above or pick a lesson below to study concepts with examples.</p>
     <div class="lesson-viewer">
       <div id="lesson-content" class="lesson-content">
-        <p class="lesson-placeholder">Select a topic to view its lesson.</p>
+        <p class="lesson-placeholder" data-i18n="lessons.placeholder">Select a topic to view its lesson.</p>
       </div>
     </div>
   </section>
 
   <!-- Quiz -->
   <section id="quiz" class="section">
-    <h2>Practice Quiz</h2>
-    <p class="section-sub">Test your skills with randomly generated questions.</p>
+    <h2 data-i18n="quiz.title">Practice Quiz</h2>
+    <p class="section-sub" data-i18n="quiz.sub">Test your skills with randomly generated questions.</p>
     <div class="quiz-box">
       <div class="quiz-header">
         <span id="quiz-topic-label">Mixed Topics</span>
@@ -111,19 +117,19 @@
         <button id="next-btn" class="btn btn-primary next-btn" hidden>Next Question →</button>
       </div>
       <div id="quiz-result" class="quiz-result" hidden>
-        <h3>Quiz Complete!</h3>
+        <h3 data-i18n="quiz.complete">Quiz Complete!</h3>
         <p id="result-text"></p>
-        <button id="restart-btn" class="btn btn-primary">Try Again</button>
+        <button id="restart-btn" class="btn btn-primary" data-i18n="quiz.again">Try Again</button>
       </div>
       <div class="quiz-picker">
-        <label for="topic-select">Topic:</label>
+        <label for="topic-select" data-i18n="quiz.topicLabel">Topic:</label>
         <select id="topic-select">
-          <option value="mixed">Mixed Topics</option>
-          <option value="arithmetic">Arithmetic</option>
-          <option value="fractions">Fractions</option>
-          <option value="algebra">Algebra</option>
-          <option value="geometry">Geometry</option>
-          <option value="percentages">Percentages</option>
+          <option value="mixed" data-i18n="quiz.mixed">Mixed Topics</option>
+          <option value="arithmetic" data-i18n="topics.arithmetic.name">Arithmetic</option>
+          <option value="fractions" data-i18n="topics.fractions.name">Fractions</option>
+          <option value="algebra" data-i18n="topics.algebra.name">Algebra</option>
+          <option value="geometry" data-i18n="topics.geometry.name">Geometry</option>
+          <option value="percentages" data-i18n="topics.percentages.name">Percentages</option>
         </select>
       </div>
     </div>
@@ -131,8 +137,8 @@
 
   <!-- Footer -->
   <footer>
-    <p>∑ Learning Math — Learn, practice, and grow your math skills.</p>
-    <p class="footer-sub">Built for learners everywhere.</p>
+    <p>∑ <span data-i18n="footer.main">Learning Math — Learn, practice, and grow your math skills.</span></p>
+    <p class="footer-sub" data-i18n="footer.sub">Built for learners everywhere.</p>
   </footer>
 
   <script src="script.js"></script>
